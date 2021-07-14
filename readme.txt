@@ -9,22 +9,17 @@ https://blog.csdn.net/rhx_qiuzhi/article/details/80296801
 （8）刚开始运行时，请保证至少5小时的联网（不能断网），这是因为程序搜索过程未设置断网重启机制，参照（2）.
 （9）<1>不同的机器需在aiqicha_main.py的第134行name_list = name_list[eve_num*8:]处进行修改，这里设置一下每个人的次序：
 
-name_list = name_list[0:eve_num*2] 
-name_list = name_list[eve_num*2:eve_num*4] 
-name_list = name_list[eve_num*4:eve_num*6] 
-name_list = name_list[eve_num*6:eve_num*8] 
-name_list = name_list[eve_num*8:] 
-请任一墨单独联系我：1、将第123行的"guoqi.txt"改成"yangqi.txt"
-                                2、删除第132-136行
+    name_list = name_list[0:eve_num*2] 
+    name_list = name_list[eve_num*2:eve_num*4] 
+    name_list = name_list[eve_num*4:eve_num*6] 
+    name_list = name_list[eve_num*6:eve_num*8] 
+    name_list = name_list[eve_num*8:] 
 
-        <2>在Get_Requests.py里面18—23行改一下proxyHost、proxyPort、proxyUser、proxyPass4个参数：
-如胡旭伦同学的参数：
-proxyHost = "u6226.5.tp.16yun.cn"
-proxyPort = "6445"
-proxyUser = "16WLZRTV"
-proxyPass = "642779"
-其他同学请单独联系我。其他同学请单独联系我。其他同学请单独联系我。
-
+　　<2>在Get_Requests.py里面18—23行改一下proxyHost、proxyPort、proxyUser、proxyPass4个参数，如某参数：
+    proxyHost = "u6226.5.tp.16yun.cn"
+    proxyPort = "6445"
+    proxyUser = "16WLZRTV"
+    proxyPass = "642779"
 （10）如果您有事需要长时间外出，请先主动断网，等3分钟再关闭程序。这是因为程序的断网重启机制比异常重启机制恢复的更快。您归来后重启程序时，请参照（2）。
 （11）输出"开始第X层的数据解析"后，输出显示字典（json）信息才算正常，否则有误请联系我。
 （12）程序出现"第3层的数据解析结束"+"全部处理完毕"时，表示爬取结束。此时需要反馈数据，包括All_data和deficiency_org.
